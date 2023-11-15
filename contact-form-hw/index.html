@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <main>
+      <h2 class="form-head">Contact Form</h2>
+      <p class="form-description">
+        Please fill in your information and we'll be sending your order
+      </p>
+      <form class="contact-form">
+        <label class="form-label">
+          <span class="label-caption">Your name</span>
+          <div class="form-container">
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              placeholder="first name"
+              minlength="2"
+              maxlength="20"
+              pattern="[A-ZА-Я][a-zа-я]{1,19}"
+              required
+              autofocus
+              tabindex="1"
+            />
+            <input
+              class="form-input"
+              type="text"
+              name="user-surname"
+              placeholder="last name"
+              minlength="2"
+              maxlength="20"
+              pattern="[A-ZА-Я][a-zа-я]{1,19}"
+              required
+              tabindex="2"
+            />
+          </div>
+        </label>
+
+        <label class="form-label">
+          <span class="label-caption">Your email</span>
+          <div class="form-container">
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              placeholder="your_mail@mail.com"
+              required
+              tabindex="3"
+            />
+          </div>
+        </label>
+
+        <label class="form-label">
+          <span class="label-caption">Phone*</span>
+          <div class="form-container">
+            <input
+              class="form-input"
+              type="tel"
+              name="user-tel1"
+              pattern="\d{3}"
+              placeholder="000"
+              required
+              tabindex="4"
+            />
+            <input
+              class="form-input"
+              type="tel"
+              name="user-tel2"
+              pattern="\d{3}"
+              placeholder="000"
+              required
+              tabindex="5"
+            />
+            <input
+              class="form-input"
+              type="tel"
+              name="user-tel3"
+              pattern="\d{4}"
+              placeholder="0000"
+              required
+              tabindex="6"
+            />
+          </div>
+        </label>
+
+        <label class="form-label">
+          <span class="label-caption">Message subject*</span>
+          <div class="form-container">
+            <select class="form-input" name="msg-subj" tabindex="7" required>
+              <option value="">Choose...</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">Other</option>
+            </select>
+          </div>
+        </label>
+
+        <label class="form-label">
+          <span class="label-caption">Message*</span>
+          <div class="form-container">
+            <textarea
+              class="form-input"
+              name="msg"
+              minlength="1"
+              maxlength="200"
+              cols="30"
+              rows="5"
+              tabindex="8"
+              required
+            ></textarea>
+          </div>
+        </label>
+
+        <div class="form-btn">
+          <button type="submit" class="submit-btn">Submit form</button>
+        </div>
+
+      </form>
+    </main>
+  </body>
+</html>

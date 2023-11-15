@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <!--  <label for="user-name">Name:</label>
+      <input id="user-name" type="text"> 
+      <label>Name: <input type="text" name="user-name"/></label>
+      <button type="reset">reset</button>  -->
+
+      <fieldset>
+        <legend>Text inputs</legend>
+        <label>
+          <span>Text</span>
+          <input
+            type="text"
+            name="text-field"
+            placeholder="Yourname"
+            value="qwerty"
+            minlength="2"
+            maxlength="20"
+            pattern=".*\S.*"
+            required
+            autofocus
+            tabindex="1"
+          />
+        </label>
+        <br />
+        <label>
+          <span>Email</span>
+          <input type="email" name="user-email" />
+        </label>
+        <br />
+
+        <label>
+          <span>Password</span>
+          <input type="password" name="user-password" />
+        </label>
+        <br />
+
+        <label>
+          <span>Url</span>
+          <input type="url" name="user-url" />
+        </label>
+        <br />
+
+        <label>
+          <span>Phone</span>
+          <input type="tel" name="user-tel" />
+        </label>
+        <br />
+
+        <label>
+          <span>Search</span>
+          <input type="search" name="user-search" autocomplete="off" />
+        </label>
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Number inputs</legend>
+        <label>
+          <span>Quantity:</span>
+          <input type="number" name="user-age" min="0" max="150" step="2" />
+        </label>
+        <br />
+
+        <label>
+          <span>Valume:</span>
+          <input type="range" name="user-age" min="0" max="100" step="25" />
+        </label>
+        <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>DateTime inputs</legend>
+        <label>
+          <span>Date:</span>
+          <input type="date" name="date" />
+        </label>
+        <br />
+
+        <label>
+          <span>Datetime:</span>
+          <input type="datetime-local" name="datetime" />
+        </label>
+        <br />
+
+        <label>
+          <span>Time:</span>
+          <input type="time" name="time" />
+        </label>
+        <br />
+
+        <label>
+          <span>Month:</span>
+          <input type="month" name="month" />
+        </label>
+        <br />
+
+        <label>
+          <span>Week:</span>
+          <input type="week" name="week" />
+        </label>
+        <br />
+      </fieldset>
+
+      <label>Photo <input type="file" name="user-photo" multiple /></label>
+
+      <input type="color" name="theme" />
+
+      <input type="hidden" name="country" value="ukraine" />
+
+      <input type="button" value="I am button" />
+      <input type="submit" value="I am submit button" />
+      <input type="reset" value="I am reset button" />
+      <input
+        type="image"
+        src="https://cdn-icons-png.flaticon.com/512/6492/6492707.png"
+        alt="send"
+      />
+      <br />
+      <fieldset>
+        <legend>Set gender</legend>
+        <label>Male <input type="radio" name="gender" value="male" /></label>
+        <label
+          >Female <input type="radio" name="gender" value="female"
+        /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Prefs</legend>
+        <label
+          >Sport <input type="checkbox" name="prefs" value="sport" checked
+        /></label>
+        <label
+          >Drawing <input type="checkbox" name="prefs" value="drawing"
+        /></label>
+      </fieldset>
+
+      <!-- <textarea name="" id="" cols="30" rows="10"></textarea>
+<select name="" id=""></select> -->
+
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
